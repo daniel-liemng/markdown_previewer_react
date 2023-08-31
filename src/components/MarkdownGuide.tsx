@@ -3,16 +3,13 @@ import { styled } from 'styled-components';
 const MarkdownGuide = () => {
   return (
     <GuideContainer>
-      <code># H1</code>
-      <code>## H2</code>
-      <code>### H3</code>
-      <code>**bold**</code>
-      <code>*italic*</code>
+      <code>*Italic*</code>
+      <code>**Bold**</code>
+      <code># Heading 1</code>
+      <code>## Heading 2</code>
       <code>[Link](http://a.com)</code>
       <code>![Image](http://url/a.png)</code>
-      <code>`inline code`</code>
-      <code>```block code```</code>
-      <code>-list</code>
+      <code>![Image](http://url/a.png)</code>
     </GuideContainer>
   );
 };

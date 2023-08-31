@@ -11,14 +11,17 @@ const App = () => {
   const [showGuide, setShowGuide] = useState(false);
   const [markdown, setMarkdown] = useState('# Hello World');
 
-  const handleChange = () => {};
+  const handleChange = (text: string) => {
+    setMarkdown(text);
+  };
   return (
     <div>
       <Header onToggleGuide={() => setShowGuide((prev) => !prev)} />
       {showGuide && <MarkdownGuide />}
       <Container>
-        <MarkdownInput />
-        <MarkdownOutput />
+        <MarkdownInput value={markdown} onChange={handleChange} />
+
+        <MarkdownOutput markdown={markdown} />
       </Container>
     </div>
   );
@@ -28,6 +31,7 @@ const Container = styled.div`
   width: 100%;
   height: 70vh;
   display: flex;
+  gap: 2rem;
 `;
 
 export default App;

@@ -22,7 +22,7 @@ Markdown Previewer is a tool that takes the user input in Markdown format, and d
 
 ## Screenshots
 
-![App Screenshot](https://github.com/daniel-liemng/charity_finder_react/blob/main/screenshot/charity-finder-photo.png)
+![App Screenshot](https://github.com/daniel-liemng/markdown_previewer_react/blob/master/screenshot/markdown-preview-photo.png)
 
 ## Installation
 

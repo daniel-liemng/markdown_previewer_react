@@ -14,6 +14,7 @@ const App = () => {
   const handleChange = (text: string) => {
     setMarkdown(text);
   };
+
   return (
     <div>
       <Header onToggleGuide={() => setShowGuide((prev) => !prev)} />

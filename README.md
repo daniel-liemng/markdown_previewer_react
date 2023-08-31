@@ -1,27 +1,44 @@
-# React + TypeScript + Vite
+# Markdown Previewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Markdown Previewer is a tool that takes the user input in Markdown format, and displays the converted HTML in real time.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [About The Project](#about-the-project)
 
-## Expanding the ESLint configuration
+- [Tech Stack](#tech-stack)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Screenshots](#screenshots)
 
-- Configure the top-level `parserOptions` property like this:
+- [Installation](#installation)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## About The Project
+
+Markdown Previewer is a tool that takes the user input in Markdown format, and displays the converted HTML in real time.
+
+## Tech Stack
+
+**Client:** React, React-Markdown, Typescript, Styled-Components
+
+## Screenshots
+
+![App Screenshot](https://github.com/daniel-liemng/charity_finder_react/blob/main/screenshot/charity-finder-photo.png)
+
+## Installation
+
+To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer.
+From your command line:
+
+```bash
+  # Clone this repository
+  $ git clone https://github.com/daniel-liemng/markdown_previewer_react.git
+
+  # Go into the repository
+  $ cd markdown_previewer_react
+
+  # Install dependencies
+  $ npm install
+
+  # Run the app
+  $ npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
